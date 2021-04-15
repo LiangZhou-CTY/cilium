@@ -144,7 +144,7 @@ jobs:
           cilium uninstall --wait
           pgrep -f "kubectl port-forward" | xargs kill -9 # kill background port forwards
 
-      - name: Install Cilium with encryption enabled
+      - name: Install Cilium with encryption
         run: |
           cilium install \
             --encryption \
